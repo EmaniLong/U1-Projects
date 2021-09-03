@@ -1,4 +1,30 @@
+import javax.swing.JOptionPane;
+import java.text.DecimalFormat;
+
+
 public class Sales {
+
+    public static void main(String[] args) {
+
+        DecimalFormat chickennuggets =new DecimalFormat("#,###.00");
+
+        int salestax, discount, quantity;
+        double price, subtotal, total;
+
+        price = Double.parseDouble(JOptionPane.showInputDialog("What is the price of the item ?"));
+        salestax = Integer.parseInt(JOptionPane.showInputDialog("What is the sales tax ?"));
+        discount = Integer.parseInt(JOptionPane.showInputDialog("What is the discount ?"));
+        quantity = Integer.parseInt(JOptionPane.showInputDialog("How many Items do you have ?"));
+
+
+
+
+
+
+    }
+
+
+
 
     /*Write a program, using dialog boxes, which prompts the user to enter a quantity, price, discount(as an integer) and sales tax(as an integer).
     The program should output the subtotal, tax total and total cost. Output should have proper currency format and proper rounding.
